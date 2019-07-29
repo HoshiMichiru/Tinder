@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LZy-Qi-Evh">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,52 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="LLM-Kg-Zuf">
+            <objects>
+                <viewController id="HqJ-sW-6LL" customClass="StartViewController" customModule="TinderUIProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6nw-7p-cYF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="ルール ・あくまで「タイプ」「タイプではない」で判断しよう ・人の価値観を否定しないように気をつけよう ・２人以上でやるとたのしさUP！" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AC6-Bh-vMK">
+                                <rect key="frame" x="37" y="354" width="337" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPZ-9u-ogc">
+                                <rect key="frame" x="83" y="654" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="女の子向け"/>
+                                <connections>
+                                    <action selector="forGirls:" destination="HqJ-sW-6LL" eventType="touchUpInside" id="jbg-9x-PS5"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="KE4-be-9f0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwk-rd-1PL">
+                                <rect key="frame" x="261" y="654" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="男の子向け"/>
+                                <connections>
+                                    <action selector="forBoys:" destination="HqJ-sW-6LL" eventType="touchUpInside" id="osR-87-mE3"/>
+                                    <segue destination="Tkd-27-4Au" kind="show" id="0jq-BZ-eMC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YrY-LS-Veu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rIp-Yv-hK4"/>
+                    <connections>
+                        <outlet property="textView" destination="AC6-Bh-vMK" id="mu7-vh-kwX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YoD-bW-OVO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="266.66666666666669" y="434.59821428571428"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -19,7 +65,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hxU-Mw-IFe" customClass="KolodaView" customModule="Koloda">
-                                <rect key="frame" x="20" y="226" width="374" height="360"/>
+                                <rect key="frame" x="20" y="150" width="374" height="436"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -61,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="113.83928571428571"/>
         </scene>
         <!--Cute View Controller-->
         <scene sceneID="rAP-mb-pEB">
@@ -117,7 +163,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9XQ-7P-2RC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="806"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="805.58035714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BHd-lP-zOE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LZy-Qi-Evh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GZN-ja-lfX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HqJ-sW-6LL" kind="relationship" relationship="rootViewController" id="dp9-6C-OXg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="seG-dM-3y4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-643.47826086956525" y="434.59821428571428"/>
         </scene>
     </scenes>
 </document>

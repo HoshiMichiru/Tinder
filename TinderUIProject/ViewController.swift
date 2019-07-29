@@ -12,7 +12,7 @@ import Koloda
 class ViewController: UIViewController {
   
     @IBOutlet weak var kolodaView: KolodaView!
-    let men = ["haruma","hukuyama","juniti","kento","kubota","makken","nisijima","okada","ryo","ryouma","souta","suda","syo","syun","takenouti","takeru","tamaki","touri","tumabuki","yagura","yamada"]
+    let men = ["haruma","hukuyama","juniti","kento","kubota","makken","nisijima","okada","ryo","ryouma","souta","suda","syo","syun","takenouti","takeru","tamaki","touri","tumabuki","yagura","yamada","kentarou"]
     
    
     

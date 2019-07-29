@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F788F041565373509C43466 /* Pods_TinderUIProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B689D6B48636960C0205F4D9 /* Pods_TinderUIProject.framework */; };
+		CFA144BE22EE760F009DD2FE /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA144BD22EE760F009DD2FE /* StartViewController.swift */; };
 		CFC0E28B22EA9F8F0027386E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0E28A22EA9F8F0027386E /* AppDelegate.swift */; };
 		CFC0E28D22EA9F8F0027386E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0E28C22EA9F8F0027386E /* ViewController.swift */; };
 		CFC0E29022EA9F8F0027386E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC0E28E22EA9F8F0027386E /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		66E4B3E06F5A73D40A2C7DA0 /* Pods-TinderUIProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderUIProject.release.xcconfig"; path = "Target Support Files/Pods-TinderUIProject/Pods-TinderUIProject.release.xcconfig"; sourceTree = "<group>"; };
 		70520571E2C3118E87489EFF /* Pods-TinderUIProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderUIProject.debug.xcconfig"; path = "Target Support Files/Pods-TinderUIProject/Pods-TinderUIProject.debug.xcconfig"; sourceTree = "<group>"; };
 		B689D6B48636960C0205F4D9 /* Pods_TinderUIProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderUIProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA144BD22EE760F009DD2FE /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		CFC0E28722EA9F8F0027386E /* TinderUIProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderUIProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC0E28A22EA9F8F0027386E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFC0E28C22EA9F8F0027386E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			children = (
 				CFC0E28A22EA9F8F0027386E /* AppDelegate.swift */,
 				CFC0E28C22EA9F8F0027386E /* ViewController.swift */,
+				CFA144BD22EE760F009DD2FE /* StartViewController.swift */,
 				CFC0E28E22EA9F8F0027386E /* Main.storyboard */,
 				CFC0E29122EA9F900027386E /* Assets.xcassets */,
 				CFC0E29322EA9F900027386E /* LaunchScreen.storyboard */,
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFC0E37322EDF2A60027386E /* CuteViewController.swift in Sources */,
+				CFA144BE22EE760F009DD2FE /* StartViewController.swift in Sources */,
 				CFC0E28D22EA9F8F0027386E /* ViewController.swift in Sources */,
 				CFC0E28B22EA9F8F0027386E /* AppDelegate.swift in Sources */,
 			);

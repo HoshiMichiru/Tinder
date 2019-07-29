@@ -12,12 +12,15 @@ import Koloda
 class CuteViewController: UIViewController {
 
     @IBOutlet weak var kolodaView: KolodaView!
-    let women = ["airi","an","arisu","eraiza","kannna","kyoko","mai","miduki","minami","ngomi","satomi","sayuri","suzu","yui"]
+    let women = ["airi","an","arisu","eraiza","kannna","kyoko","mai","miduki","minami","ngomi","satomi","sayuri","suzu","yui","nozomi","mayu","keiko"]
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        kolodaView.delegate = self
+        kolodaView.dataSource = self
+        
        
     }
     
